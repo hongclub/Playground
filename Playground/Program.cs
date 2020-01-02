@@ -10,6 +10,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
+using Playground.Methods;
+using Playground.Models;
 
 
 
@@ -128,29 +131,29 @@ namespace Playground
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
 
-// Test : IEnumerableExample.cs
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// <summary>
-/// 
-/// class: LinqMethods.cs
-/// Test : LinqMethods.cs
-/// </summary>
-namespace Playground
-{
-    public class Demo
-    {
-        public static void Main(string[] args)
-        {
-            // Acts
-            // LinqMethods.SingleOrDefault();
-            LinqMethods.FirstOrDefault();
-            // LinqMethods.First();
+//// Test : IEnumerableExample.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///// <summary>
+///// 
+///// class: LinqMethods.cs
+///// Test : LinqMethods.cs
+///// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            // Acts
+//            // LinqMethods.SingleOrDefault();
+//            LinqMethods.FirstOrDefault();
+//            // LinqMethods.First();
 
-            Console.ReadLine();
-        }
+//            Console.ReadLine();
+//        }
 
-    }
-}
+//    }
+//}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
@@ -178,6 +181,33 @@ namespace Playground
 //}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+// Test : LazyLoading.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// <summary>
+/// 
+/// class: LazyLoadingExample.cs
+/// Test : LazyLoadingExample.cs
+/// </summary>
+namespace Playground
+{
+    public class Demo
+    {
+        public static void Main(string[] args)
+        {
+            LazyLoadingExample o = new LazyLoadingExample(); // order object not loaded
+            Console.WriteLine(o.CustomerName);
+            foreach (Order o1 in o.Orders) // Load order object only at this moment
+            {
+                Console.WriteLine(o1.OrderNumber);
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 
 

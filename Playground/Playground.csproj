@@ -49,15 +49,18 @@
   <ItemGroup>
     <Compile Include="Methods\GarbageCollectionMethods.cs" />
     <None Include="Program.archive" />
+    <Compile Include="Methods\LazyLoadingExample.cs" />
     <Compile Include="Methods\LinqMethods.cs" />
     <Compile Include="Methods\IEnumerableExample.cs" />
     <Compile Include="Methods\NullOperators.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\NachaStagedPaymentDetailItem.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Methods\StringMethods.cs" />
     <Compile Include="Test.cs" />
+    <None Include="ReadME.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

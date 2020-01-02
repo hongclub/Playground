@@ -48,13 +48,54 @@ namespace Playground
             //var result = arr.Where(x => x == new Guid("0c0bf5b5-f5c7-4e1d-a682-86107eba38f6")).FirstOrDefault();
 
 
-            Card result = new Card();
+            Card card = new Card();
             Card[] arr = new Card[2];
-            arr[0] = new Card() { Id = "1" };
+            arr[0] = new Card() { Id = "1", CardHolderFirstName = null, CardHolderLastName = null, CardNumber = "1234" };
             arr[1] = new Card() { Id = "2" };
 
-            result = arr.FirstOrDefault( x => x.Id == "3");
-        }
+            //card = arr.FirstOrDefault( x => x.Id == "1");
+
+            //string CardHolderName = card == null ? string.Empty : $"{card.CardHolderFirstName?.Trim()} {card.CardHolderLastName?.Trim()}";
+            //string CardNumber = card?.CardNumber;
+
+
+            for (var i = 1; i <= arr.Length; i++)
+            {
+                Console.WriteLine("new:" + (i));
+            }
+            Console.WriteLine("");
+
+            for (var i = 1; i < arr.Length; i++)
+            {
+                Console.WriteLine("fix:" + (i+1));
+            }
+            Console.WriteLine("");
+
+            for (var i = 0; i <= arr.Length; i++)
+            {
+                Console.WriteLine("old:" + i);
+            }
+            Console.WriteLine("");
+
+            for (var i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("fix:" + i);
+            }
+            Console.WriteLine("");
+
+
+            var counter = new[] { 1 };
+            foreach (var c in arr)
+            {
+               
+               Console.WriteLine("cde:" + counter[0]++);
+   
+
+            }
+            Console.WriteLine("");
+ 
+
+    }
 
 
         /// <summary>
