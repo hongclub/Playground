@@ -180,34 +180,61 @@ namespace Playground
 
 //}
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-// Test : LazyLoading.cs
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// <summary>
+//// Test : LazyLoading.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///// <summary>
+///// 
+///// class: LazyLoadingExample.cs
+///// Test : LazyLoadingExample.cs
+///// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            LazyLoadingExample o = new LazyLoadingExample(); // order object not loaded
+//            Console.WriteLine(o.CustomerName);
+//            foreach (Order o1 in o.Orders) // Load order object only at this moment
+//            {
+//                Console.WriteLine(o1.OrderNumber);
+//            }
+//            Console.ReadLine();
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+// Test : AsyncAwait.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// <summary>
 /// 
-/// class: LazyLoadingExample.cs
-/// Test : LazyLoadingExample.cs
+/// class: await a thread
 /// </summary>
 namespace Playground
 {
     public class Demo
+{
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            LazyLoadingExample o = new LazyLoadingExample(); // order object not loaded
-            Console.WriteLine(o.CustomerName);
-            foreach (Order o1 in o.Orders) // Load order object only at this moment
-            {
-                Console.WriteLine(o1.OrderNumber);
-            }
-            Console.ReadLine();
-        }
-
+        AsyncAwait.AwaitMethod();
+        Console.WriteLine("Main Thread 1st output ..." );
+        Console.WriteLine("Main Thread 2st output ...");
+        Console.WriteLine();
+        Console.ReadLine();
     }
+
+    
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////// 
+}
+
 
 
 
