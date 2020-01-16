@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Playground.Methods;
 using Playground.Models;
+using System.Net.Http;
 
 
 // test reBase
@@ -208,9 +209,186 @@ namespace Playground
 //    }
 //}
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//// Test : AsyncAwait.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// <summary>
+///// 
+///// class: await a thread
+///// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            AsyncAwait.WithoutAwaitMethod();
+//            Console.WriteLine("Main Thread 1st output ...");
+//            Console.WriteLine("Main Thread 2st output ...");
+//            Console.WriteLine();
+//            Console.ReadLine();
+//        }
+
+
+
+
+//    }
+
+//}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//// Test : AsyncAwait.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// <summary>
+///// 
+///// class: await a thread
+///// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        //static Random rand = new Random();
+
+//        //static void Main()
+//        //{
+//        //    // Wait on a single task with no timeout specified.
+//        //    Task taskA = Task.Run(() => Thread.Sleep(2000));
+//        //    Console.WriteLine("taskA Status: {0}", taskA.Status);
+//        //    try
+//        //    {
+//        //        taskA.Wait(30000);   // wait until it is finished
+//        //        Console.WriteLine("taskA Status: {0}", taskA.Status);
+//        //    }
+//        //    catch (AggregateException)
+//        //    {
+//        //        Console.WriteLine("Exception in taskA.");
+//        //    }
+
+//        //    Console.ReadLine();
+//        //}
+
+
+//        //public static void Main()
+//        //{
+//        //    var tasks = new Task[3];
+//        //    var rnd = new Random();
+//        //    for (int ctr = 0; ctr <= 2; ctr++)
+//        //        tasks[ctr] = Task.Run(() => Thread.Sleep(rnd.Next(500, 3000)));
+
+//        //    try
+//        //    {
+//        //        // int index = Task.WaitAny(tasks);
+//        //        Console.WriteLine("Task #{0} completed first.\n", tasks[index].Id);
+//        //        Console.WriteLine("Status of all tasks:");
+//        //        foreach (var t in tasks)
+//        //            Console.WriteLine("   Task #{0}: {1}", t.Id, t.Status);
+//        //    }
+//        //    catch (AggregateException)
+//        //    {
+//        //        Console.WriteLine("An exception occurred.");
+//        //    }
+
+//        //    Console.ReadLine();
+//        //}
+
+
+//        //public static async Task Main()
+//        //{
+//        //    // Wait for all tasks to complete.
+//        //    //Task[] tasks = new Task[10];
+//        //    List<Task> tasks = new List<Task>();
+//        //    for (int i = 0; i < 10; i++)
+//        //    {
+//        //        //tasks[i] = Task.Run(() => Thread.Sleep(2000));
+//        //        tasks.Add(Task.Run(() => Thread.Sleep(2000)));
+//        //    }
+//        //    try
+//        //    {
+//        //        //  Task.WaitAny(tasks);
+//        //       await Task.WhenAll(tasks);
+//        //    }
+//        //    catch (AggregateException ae)
+//        //    {
+//        //        Console.WriteLine("One or more exceptions occurred: ");
+//        //        foreach (var ex in ae.Flatten().InnerExceptions)
+//        //            Console.WriteLine("   {0}", ex.Message);
+//        //    }
+
+//        //    Console.WriteLine("Status of completed tasks:");
+//        //    foreach (var t in tasks)
+//        //        Console.WriteLine("   Task #{0}: {1}", t.Id, t.Status);
+
+//        //    Console.ReadLine();
+//        //}
+
+
+
+
+//  }
+
+//}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//// Test : AsyncAwait.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// <summary>
+///// 
+///// class: await a thread
+///// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static async Task<int> Main(string[] args)
+//        {
+//            // You need to add a reference to System.Net.Http to declare client.
+//            var client = new HttpClient();
+
+//            // GetStringAsync returns a Task<string>. That means that when you await the
+//            // task you'll get a string (urlContents).
+//            Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com/dotnet");
+//            string urlContents = await getStringTask;
+
+//            // You can do work here that doesn't rely on the string from GetStringAsync.
+//            Console.WriteLine("do some other stuff");
+
+//            // The await operator suspends AccessTheWebAsync.
+//            //  - AccessTheWebAsync can't continue until getStringTask is complete.
+//            //  - Meanwhile, control returns to the caller of AccessTheWebAsync.
+//            //  - Control resumes here when getStringTask is complete.
+//            //  - The await operator then retrieves the string result from getStringTask.
+
+
+//            Console.WriteLine(urlContents.Substring(0, 100));
+//            Console.ReadLine();
+//            // The return statement specifies an integer result.
+//            // Any methods that are awaiting AccessTheWebAsync retrieve the length value.
+//            return urlContents.Length;
+
+//        }
+
+
+
+
+//    }
+
+//}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 // Test : AsyncAwait.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -221,18 +399,85 @@ namespace Playground
 namespace Playground
 {
     public class Demo
-{
-    public static void Main(string[] args)
     {
-        AsyncAwait.AwaitMethod();
-        Console.WriteLine("Main Thread 1st output ..." );
-        Console.WriteLine("Main Thread 2st output ...");
-        Console.WriteLine();
-        Console.ReadLine();
-    }
+        //public static async Task<int> Main(string[] args)
+        //{
+        //    // You need to add a reference to System.Net.Http to declare client.
+        //    Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
+        //    int intResult = await returnedTaskTResult;
+        //    // or, in a single statement
+        //    //int intResult = await GetTaskOfTResultAsync();
+        //    Console.WriteLine(intResult);
+        //    Console.ReadLine();
+        //    return 1;
 
-    
-}
+        //}
+
+
+        //public static async Task<int> GetTaskOfTResultAsync()
+        //{
+        //    int hours = 0;
+        //    await Task.Delay(10000);
+        //    // Return statement specifies an integer result.
+        //    return hours;
+        //}
+
+
+        //public static void Main(string[] args)
+        //{
+        //    GetTaskOfTResultAsync();
+
+        //}
+
+
+        //public static async void GetTaskOfTResultAsync()
+        //{
+        //    await Task.Delay(10000);
+
+        //}
+
+
+        public static async Task Main(string[] args)
+        {
+            var sw = Stopwatch.StartNew();
+            var tasks = new List<Task>();
+            for (int i=1; i < 4; i++)
+            {
+                tasks.Add(CreateMoneyFlowTransaction1(i));
+            }
+            await Task.WhenAny(tasks);
+
+            // You need to add a reference to System.Net.Http to declare client.
+            //Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
+            //int intResult = await returnedTaskTResult;
+            // or, in a single statement
+            //int intResult = await GetTaskOfTResultAsync();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+            foreach (var t in tasks)
+                Console.WriteLine(t.Status);
+            Console.ReadLine();
+
+        }
+
+
+        public static async Task CreateMoneyFlowTransaction1(int i)
+        {
+            
+            await CreateMoneyFlowTransaction2(i);
+            int hours = 0;
+        }
+
+        public static async Task<int> CreateMoneyFlowTransaction2(int i)
+        {
+            int hours = 0;
+            await Task.Delay(10000 * i);
+            // Return statement specifies an integer result.
+            return hours;
+        }
+
+
+
+    }
 
 }
 
