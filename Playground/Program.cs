@@ -576,12 +576,49 @@ namespace Playground
 
 
 
-///// Test : StaticVariable.cs
+/////// Test : StaticVariable.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: StaticVariable.cs
+/////// Test : StaticVariable.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            // static variable belongs to the class
+//            // once change the static variable, it will change forever for that class
+//            StaticVariable.displayStatic();
+//            StaticVariable.staticV = "Change Static variable";
+//            StaticVariable.displayStatic();
+
+//            // nonstatic variable belongs to the object
+//            StaticVariable s1 = new StaticVariable();
+//            StaticVariable s2= new StaticVariable();
+//            s1.nonStaticV = "Change nonStatic variable 1";
+//            StaticVariable.displayStatic();
+//            Console.WriteLine(s1.nonStaticV);
+//            Console.WriteLine(s2.nonStaticV);
+
+//            Console.ReadLine();
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+///// Test : IEnumerableVsIQueryable.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: StaticVariable.cs
-///// Test : StaticVariable.cs
+///// class: IEnumerableVsIQueryable.cs
+///// Test : IEnumerableVsIQueryable.cs
 ///// </summary>
 namespace Playground
 {
@@ -589,20 +626,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            // static variable belongs to the class
-            // once change the static variable, it will change forever for that class
-            StaticVariable.displayStatic();
-            StaticVariable.staticV = "Change Static variable";
-            StaticVariable.displayStatic();
-
-            // nonstatic variable belongs to the object
-            StaticVariable s1 = new StaticVariable();
-            StaticVariable s2= new StaticVariable();
-            s1.nonStaticV = "Change nonStatic variable 1";
-            StaticVariable.displayStatic();
-            Console.WriteLine(s1.nonStaticV);
-            Console.WriteLine(s2.nonStaticV);
-
+            IEnumerableVsIQueryable.test();
             Console.ReadLine();
         }
 

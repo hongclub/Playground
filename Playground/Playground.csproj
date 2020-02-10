@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Methods\GarbageCollectionMethods.cs" />
     <None Include="Program.archive" />
+    <Compile Include="Methods\IEnumerableVsIQueryable.cs" />
     <Compile Include="Methods\LazyLoadingExample.cs" />
     <Compile Include="Methods\LinqMethods.cs" />
     <Compile Include="Methods\IEnumerableExample.cs" />
