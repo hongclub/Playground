@@ -54,6 +54,7 @@
     <Compile Include="Methods\IEnumerableExample.cs" />
     <Compile Include="Methods\NullOperators.cs" />
     <Compile Include="Methods\AsyncAwait.cs" />
+    <Compile Include="Methods\StaticVariable.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\NachaStagedPaymentDetailItem.cs" />
     <Compile Include="Models\Order.cs" />

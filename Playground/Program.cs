@@ -393,164 +393,223 @@ namespace Playground
 // Test : AsyncAwait.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // <summary>
-/// 
-/// class: await a thread
-/// </summary>
+
+
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        //public static async Task<int> Main(string[] args)
+//        //{
+//        //    // You need to add a reference to System.Net.Http to declare client.
+//        //    Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
+//        //    int intResult = await returnedTaskTResult;
+//        //    // or, in a single statement
+//        //    //int intResult = await GetTaskOfTResultAsync();
+//        //    Console.WriteLine(intResult);
+//        //    Console.ReadLine();
+//        //    return 1;
+
+//        //}
+
+
+//        //public static async Task<int> GetTaskOfTResultAsync()
+//        //{
+//        //    int hours = 0;
+//        //    await Task.Delay(10000);
+//        //    // Return statement specifies an integer result.
+//        //    return hours;
+//        //}
+
+
+//        //public static void Main(string[] args)
+//        //{
+//        //    GetTaskOfTResultAsync();
+
+//        //}
+
+
+//        //public static async void GetTaskOfTResultAsync()
+//        //{
+//        //    await Task.Delay(10000);
+
+//        //}
+
+
+//        //public static async Task Main(string[] args)
+//        //{
+//        //    var sw = Stopwatch.StartNew();
+//        //    var tasks = new List<Task>();
+//        //    for (int i = 1; i < 4; i++)
+//        //    {
+//        //        // tasks.Add(CreateMoneyFlowTransaction1(i));
+//        //        tasks.Add(CreateMoneyFlowTransaction1(i));
+//        //    }
+//        //    await Task.WhenAll(tasks);
+
+//        //    // You need to add a reference to System.Net.Http to declare client.
+//        //    //Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
+//        //    //int intResult = await returnedTaskTResult;
+//        //    // or, in a single statement
+//        //    //int intResult = await GetTaskOfTResultAsync();
+//        //    Console.WriteLine(sw.ElapsedMilliseconds);
+//        //    foreach (var t in tasks)
+//        //        Console.WriteLine(t.Status);
+//        //    Console.ReadLine();
+
+//        //}
+
+
+//        //public static async Task Main(string[] args)
+//        //{
+//        //    await CreateMoneyFlowDetail();
+//        //    Console.WriteLine("i am out");
+//        //    Console.ReadLine();
+
+//        //}
+
+//        //public static async Task CreateMoneyFlowDetail()
+//        //{
+//        //    var sw = Stopwatch.StartNew();
+//        //    var tasks = new List<Task>();
+//        //    for (int i = 1; i < 4; i++)
+//        //    {
+//        //        // tasks.Add(CreateMoneyFlowTransaction1(i));
+//        //        tasks.Add(CreateMoneyFlowTransaction1(i));
+//        //    }
+//        //    await Task.WhenAll(tasks);
+
+//        //    // You need to add a reference to System.Net.Http to declare client.
+//        //    //Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
+//        //    //int intResult = await returnedTaskTResult;
+//        //    // or, in a single statement
+//        //    //int intResult = await GetTaskOfTResultAsync();
+//        //    Console.WriteLine(sw.ElapsedMilliseconds);
+//        //    foreach (var t in tasks)
+//        //        Console.WriteLine(t.Status);
+//        //    Console.ReadLine();
+
+//        //}
+
+
+//        //public static async Task CreateMoneyFlowTransaction1(int i)
+//        //{
+
+//        //    await CreateMoneyFlowTransaction2(i);
+//        //    Console.WriteLine("Inside CreateMoneyFlowTransaction1: " + i);
+//        //    int hours = 0;
+//        //}
+
+//        //public static async Task<int> CreateMoneyFlowTransaction2(int i)
+//        //{
+//        //    Console.WriteLine("Starting: " + i);
+//        //    int hours = 0;
+//        //    await Task.Run(() => Thread.Sleep(10000));
+//        //    //await Task.Delay(10000 * i);
+//        //    // Return statement specifies an integer result.
+//        //    return hours;
+
+//        //    //Console.WriteLine("Starting: " + i);
+//        //    //int hours = 0;
+//        //    //await Task.Delay(10000 * i);
+//        //    //// Return statement specifies an integer result.
+//        //    //return hours;
+//        //}
+
+
+//        //public static Task SomeLongOperation()
+//        //{
+//        //    return Task.Delay(3000);
+//        //}
+
+//        //static void Main(string[] args)
+//        //{
+
+//        //    List<Task> tasks = new List<Task>();
+
+//        //    tasks.Add(Task.Factory.StartNew(() => SomeLongOperation()));
+//        //    tasks.Add(Task.Factory.StartNew(() => SomeLongOperation()));
+
+//        //    var arr = tasks.ToArray();
+
+//        //    Stopwatch sw = Stopwatch.StartNew();
+//        //    Task.WaitAll(arr);
+//        //    Console.WriteLine("Task wait all results: " + sw.Elapsed);
+//        //    sw.Stop();
+
+//        //    sw = Stopwatch.StartNew();
+//        //    Parallel.Invoke(() => SomeLongOperation(), () => SomeLongOperation());
+//        //    Console.WriteLine("Parallel invoke results: " + sw.Elapsed);
+//        //    sw.Stop();
+
+//        //    Console.ReadKey();
+//        //}
+
+
+//        public static void Main(string[] args)
+//        {
+
+
+//            StaticVariable s = new StaticVariable();
+//        }
+
+//        public static void Method1()
+//        {
+//            Tutorial.Topic = "tommy class";
+//        }
+
+
+
+
+
+//    }
+
+
+
+//    public class Tutorial2
+//    {
+//        // Static data members of Tutorial 
+//        public string Topic = "Static class";
+//    }
+
+//}
+
+
+
+///// Test : StaticVariable.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///// <summary>
+///// 
+///// class: StaticVariable.cs
+///// Test : StaticVariable.cs
+///// </summary>
 namespace Playground
 {
     public class Demo
     {
-        //public static async Task<int> Main(string[] args)
-        //{
-        //    // You need to add a reference to System.Net.Http to declare client.
-        //    Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
-        //    int intResult = await returnedTaskTResult;
-        //    // or, in a single statement
-        //    //int intResult = await GetTaskOfTResultAsync();
-        //    Console.WriteLine(intResult);
-        //    Console.ReadLine();
-        //    return 1;
-
-        //}
-
-
-        //public static async Task<int> GetTaskOfTResultAsync()
-        //{
-        //    int hours = 0;
-        //    await Task.Delay(10000);
-        //    // Return statement specifies an integer result.
-        //    return hours;
-        //}
-
-
-        //public static void Main(string[] args)
-        //{
-        //    GetTaskOfTResultAsync();
-
-        //}
-
-
-        //public static async void GetTaskOfTResultAsync()
-        //{
-        //    await Task.Delay(10000);
-
-        //}
-
-
-        //public static async Task Main(string[] args)
-        //{
-        //    var sw = Stopwatch.StartNew();
-        //    var tasks = new List<Task>();
-        //    for (int i = 1; i < 4; i++)
-        //    {
-        //        // tasks.Add(CreateMoneyFlowTransaction1(i));
-        //        tasks.Add(CreateMoneyFlowTransaction1(i));
-        //    }
-        //    await Task.WhenAll(tasks);
-
-        //    // You need to add a reference to System.Net.Http to declare client.
-        //    //Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
-        //    //int intResult = await returnedTaskTResult;
-        //    // or, in a single statement
-        //    //int intResult = await GetTaskOfTResultAsync();
-        //    Console.WriteLine(sw.ElapsedMilliseconds);
-        //    foreach (var t in tasks)
-        //        Console.WriteLine(t.Status);
-        //    Console.ReadLine();
-
-        //}
-
-
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            await CreateMoneyFlowDetail();
-            Console.WriteLine("i am out");
+            // static variable belongs to the class
+            // once change the static variable, it will change forever for that class
+            StaticVariable.displayStatic();
+            StaticVariable.staticV = "Change Static variable";
+            StaticVariable.displayStatic();
+
+            // nonstatic variable belongs to the object
+            StaticVariable s1 = new StaticVariable();
+            StaticVariable s2= new StaticVariable();
+            s1.nonStaticV = "Change nonStatic variable 1";
+            StaticVariable.displayStatic();
+            Console.WriteLine(s1.nonStaticV);
+            Console.WriteLine(s2.nonStaticV);
+
             Console.ReadLine();
-
         }
-
-        public static async Task CreateMoneyFlowDetail()
-        {
-            var sw = Stopwatch.StartNew();
-            var tasks = new List<Task>();
-            for (int i = 1; i < 4; i++)
-            {
-                // tasks.Add(CreateMoneyFlowTransaction1(i));
-                tasks.Add(CreateMoneyFlowTransaction1(i));
-            }
-            await Task.WhenAll(tasks);
-
-            // You need to add a reference to System.Net.Http to declare client.
-            //Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
-            //int intResult = await returnedTaskTResult;
-            // or, in a single statement
-            //int intResult = await GetTaskOfTResultAsync();
-            Console.WriteLine(sw.ElapsedMilliseconds);
-            foreach (var t in tasks)
-                Console.WriteLine(t.Status);
-            Console.ReadLine();
-
-        }
-
-
-        public static async Task CreateMoneyFlowTransaction1(int i)
-        {
-
-            await CreateMoneyFlowTransaction2(i);
-            Console.WriteLine("Inside CreateMoneyFlowTransaction1: " + i);
-            int hours = 0;
-        }
-
-        public static async Task<int> CreateMoneyFlowTransaction2(int i)
-        {
-            Console.WriteLine("Starting: " + i);
-            int hours = 0;
-            await Task.Run(() => Thread.Sleep(10000));
-            //await Task.Delay(10000 * i);
-            // Return statement specifies an integer result.
-            return hours;
-
-            //Console.WriteLine("Starting: " + i);
-            //int hours = 0;
-            //await Task.Delay(10000 * i);
-            //// Return statement specifies an integer result.
-            //return hours;
-        }
-
-
-        //public static Task SomeLongOperation()
-        //{
-        //    return Task.Delay(3000);
-        //}
-
-        //static void Main(string[] args)
-        //{
-
-        //    List<Task> tasks = new List<Task>();
-
-        //    tasks.Add(Task.Factory.StartNew(() => SomeLongOperation()));
-        //    tasks.Add(Task.Factory.StartNew(() => SomeLongOperation()));
-
-        //    var arr = tasks.ToArray();
-
-        //    Stopwatch sw = Stopwatch.StartNew();
-        //    Task.WaitAll(arr);
-        //    Console.WriteLine("Task wait all results: " + sw.Elapsed);
-        //    sw.Stop();
-
-        //    sw = Stopwatch.StartNew();
-        //    Parallel.Invoke(() => SomeLongOperation(), () => SomeLongOperation());
-        //    Console.WriteLine("Parallel invoke results: " + sw.Elapsed);
-        //    sw.Stop();
-
-        //    Console.ReadKey();
-        //}
-
-
 
     }
-
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
 
