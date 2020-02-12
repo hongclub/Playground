@@ -10,5 +10,5 @@ Polymorphism -
 	when each class implements the same methods in different way (e.g. method overloading, method overriding)
 
 Abstraction - 
-	hide everything other than related data
+	hide everything other than related data (e.g. use access modifier to hide or expose methods/properiies, laptop example)
 	
