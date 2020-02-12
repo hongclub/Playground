@@ -634,12 +634,44 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
-///// Test : GenericExample.cs
+/////// Test : GenericExample.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: GenericExample.cs
+/////// Test : GenericExample.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            GenericClassExample<int> intGenericClass = new GenericClassExample<int>(10);
+//            int intVal = intGenericClass.genericMethod(200);
+
+//            GenericClassExample<string> stringGenericClass = new GenericClassExample<string>("TOMMY");
+//            string stringVal = stringGenericClass.genericMethod("WAI");
+
+
+
+//            Console.ReadLine();
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+
+///// Test : VirtualMethod.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: GenericExample.cs
-///// Test : GenericExample.cs
+///// class: VirtualMethod.cs
+///// Test : VirtualMethod.cs
 ///// </summary>
 namespace Playground
 {
@@ -647,22 +679,17 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            GenericClassExample<int> intGenericClass = new GenericClassExample<int>(10);
-            int intVal = intGenericClass.genericMethod(200);
-
-            GenericClassExample<string> stringGenericClass = new GenericClassExample<string>("TOMMY");
-            string stringVal = stringGenericClass.genericMethod("WAI");
-
-
-
+            Shape s = new Shape(1,2);
+            s.area();
+            Rectange r = new Rectange(2, 2);
+            r.area();
             Console.ReadLine();
+
         }
 
     }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-
 
 

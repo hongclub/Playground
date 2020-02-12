@@ -55,6 +55,7 @@
     <Compile Include="Methods\IEnumerableExample.cs" />
     <Compile Include="Methods\NullOperators.cs" />
     <Compile Include="Methods\AsyncAwait.cs" />
+    <Compile Include="Methods\VirtualMethod.cs" />
     <Compile Include="Methods\StaticVariable.cs" />
     <Compile Include="Methods\GenericExample.cs" />
     <Compile Include="Models\Card.cs" />
@@ -70,6 +71,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Notes\AccessModifiers.txt" />
+    <Content Include="Notes\OOPConectps.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
