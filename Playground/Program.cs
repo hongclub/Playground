@@ -611,12 +611,35 @@ namespace Playground
 
 
 
-///// Test : IEnumerableVsIQueryable.cs
+/////// Test : IEnumerableVsIQueryable.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: IEnumerableVsIQueryable.cs
+/////// Test : IEnumerableVsIQueryable.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            IEnumerableVsIQueryable.test();
+//            Console.ReadLine();
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+///// Test : GenericExample.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: IEnumerableVsIQueryable.cs
-///// Test : IEnumerableVsIQueryable.cs
+///// class: GenericExample.cs
+///// Test : GenericExample.cs
 ///// </summary>
 namespace Playground
 {
@@ -624,7 +647,14 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            IEnumerableVsIQueryable.test();
+            GenericClassExample<int> intGenericClass = new GenericClassExample<int>(10);
+            int intVal = intGenericClass.genericMethod(200);
+
+            GenericClassExample<string> stringGenericClass = new GenericClassExample<string>("TOMMY");
+            string stringVal = stringGenericClass.genericMethod("WAI");
+
+
+
             Console.ReadLine();
         }
 
