@@ -1,0 +1,9 @@
+﻿https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
+
+public - can be accessed by same or other assembly 
+
+private - can be accessed within the class only
+
+protected - can be accessed same class or dervied class (related to Inheritance) 
+
+internal - can be accessed within the same assembly, but not other assembly
