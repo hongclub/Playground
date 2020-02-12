@@ -1,0 +1,14 @@
+﻿https://stackify.com/oop-concepts-c-sharp/
+
+Encapsulation - 
+	when create a object of a class, related methods, properties, and members are treated as a single object (e.g. new object - all are kept in one class)
+
+Inheritance -
+	when inherit class, methods and properties from an existing/base class (e.g. when you create a shape, and Square inherited from Shape, it has the drawing method)
+
+Polymorphism -
+	when each class implements the same methods in different way (e.g. method overloading, method overriding)
+
+Abstraction - 
+	hide everything other than related data
+	
