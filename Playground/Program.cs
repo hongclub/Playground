@@ -666,12 +666,39 @@ namespace Playground
 
 
 
-///// Test : VirtualMethod.cs
+/////// Test : VirtualMethod.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: VirtualMethod.cs
+/////// Test : VirtualMethod.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Shape s = new Shape(1,2);
+//            s.area();
+//            Rectange r = new Rectange(2, 2);
+//            r.area();
+//            Console.ReadLine();
+
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+///// Test : AbstractMethod.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: VirtualMethod.cs
-///// Test : VirtualMethod.cs
+///// class: AbstractMethod.cs
+///// Test : AbstractMethod.cs
 ///// </summary>
 namespace Playground
 {
@@ -679,10 +706,13 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            Shape s = new Shape(1,2);
-            s.area();
-            Rectange r = new Rectange(2, 2);
-            r.area();
+            // Vehicle s = new Vehicle();  // you cannot do that, cannot create a new instant of abstract class
+            Vehicle s;
+            s = new Car();              // Polymorphism
+            s.Driving();
+            s = new Bus();              // Polymorphism
+            s.Driving();
+
             Console.ReadLine();
 
         }
