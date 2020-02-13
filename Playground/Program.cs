@@ -758,7 +758,8 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            DelegateFuncExample.Test();
+            // DelegateFuncExample.Test();
+            DelegateFuncExample.TestSimpleVersion();
         }
     }
 }

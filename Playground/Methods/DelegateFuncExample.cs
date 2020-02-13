@@ -23,5 +23,15 @@ namespace Playground
             Console.WriteLine(result);
             Console.ReadLine();
         }
+
+        public static void TestSimpleVersion()
+        {
+            Func<int, int, int> add = (x , y) => x + y ;    // inline Func: this simple version not even need a Sum method
+            int result = add(1, 2);
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
+
+
     }
 }
