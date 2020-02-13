@@ -51,6 +51,7 @@
     <Compile Include="Methods\DelegateActionExample.cs" />
     <Compile Include="Methods\DelegateFuncExample.cs" />
     <Compile Include="Methods\DelegateExample.cs" />
+    <Compile Include="Methods\EventExample.cs" />
     <Compile Include="Methods\GarbageCollectionMethods.cs" />
     <None Include="Program.archive" />
     <Compile Include="Methods\IEnumerableVsIQueryable.cs" />

@@ -745,12 +745,12 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
-/////// Test : DelegateExample.cs
+/////// Test : DelegateFuncExample.cs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// <summary>
 /////// 
-/////// class: DelegateExample.cs
-/////// Test : DelegateExample.cs
+/////// class: DelegateFuncExample.cs
+/////// Test : DelegateFuncExample.cs
 /////// </summary>
 //namespace Playground
 //{
@@ -767,12 +767,35 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
-///// Test : DelegateExample.cs
+/////// Test : DelegateActionExample.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: DelegateActionExample.cs
+/////// Test : DelegateActionExample.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            // DelegateFuncExample.Test();
+//            DelegateActionExample.TestSimpleVersion();
+//        }
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+///// Test : DelegateActionExample.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: DelegateExample.cs
-///// Test : DelegateExample.cs
+///// class: DelegateActionExample.cs
+///// Test : DelegateActionExample.cs
 ///// </summary>
 namespace Playground
 {
@@ -780,8 +803,9 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            // DelegateFuncExample.Test();
-            DelegateActionExample.TestSimpleVersion();
+
+            EventExample.Test();
+            Console.ReadLine();
         }
     }
 }
