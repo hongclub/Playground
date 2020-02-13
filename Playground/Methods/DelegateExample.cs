@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground
 {
-    public delegate int whateverDelegateOperation(int i, int j);
+    public delegate int whateverDelegateOperation(int i, int j);        // this declaration of delegate is not necessary, C# 3.0 Func<> should take care of it 
 
     public static class DelegateExample
     {
