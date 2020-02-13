@@ -3,6 +3,6 @@
 - IEnumerable vs TOLIST
 - SOLID
 - GRASP
-- Func
-- Event
-- delegate
+- x Func
+- x Event
+- x delegate
