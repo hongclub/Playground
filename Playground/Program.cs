@@ -724,6 +724,27 @@ namespace Playground
 
 
 
+/////// Test : DelegateExample.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: DelegateExample.cs
+/////// Test : DelegateExample.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            DelegateExample.Test();
+//        }
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
 ///// Test : DelegateExample.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
@@ -737,7 +758,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            DelegateExample.Test();
+            DelegateFuncExample.Test();
         }
     }
 }
