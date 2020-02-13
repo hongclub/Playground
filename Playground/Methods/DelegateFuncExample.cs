@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
+// ref: https://www.tutorialsteacher.com/csharp/csharp-func-delegate
 namespace Playground
 {
     // Similar to DelegateExample.cs

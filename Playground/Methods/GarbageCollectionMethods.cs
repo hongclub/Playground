@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// ref: https://docs.microsoft.com/en-us/dotnet/api/system.gc.gettotalmemory?view=netframework-4.8
 namespace Playground
 {
     public static class GarbageCollectionMethods

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// ref: https://www.tutorialspoint.com/what-is-the-difference-between-virtual-and-abstract-functions-in-chash
 namespace Playground.Methods
 {
     public abstract class Vehicle

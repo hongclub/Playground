@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
+// ref: https://www.tutorialsteacher.com/csharp/csharp-delegates
 namespace Playground
 {
     public delegate int whateverDelegateOperation(int i, int j);        // this declaration of delegate is not necessary, C# 3.0 Func<> should take care of it 

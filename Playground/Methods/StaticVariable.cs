@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-
+// ref: https://www.geeksforgeeks.org/static-keyword-in-c-sharp/
 namespace Playground
 {
     public  class StaticVariable

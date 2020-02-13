@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// ref: https://www.codeproject.com/Articles/652556/Can-you-explain-Lazy-Loading
 namespace Playground.Methods
 {
     class LazyLoadingExample
