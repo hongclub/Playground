@@ -693,12 +693,43 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
-///// Test : AbstractMethod.cs
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// Test : AbstractMethod.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: AbstractMethod.cs
+/////// Test : AbstractMethod.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            // Vehicle s = new Vehicle();  // you cannot do that, cannot create a new instant of abstract class
+//            Vehicle s;
+//            s = new Car();              // Polymorphism
+//            s.Driving();
+//            s = new Bus();              // Polymorphism
+//            s.Driving();
+
+//            Console.ReadLine();
+
+//        }
+
+//    }
+//}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+///// Test : DelegateExample.cs
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: AbstractMethod.cs
-///// Test : AbstractMethod.cs
+///// class: DelegateExample.cs
+///// Test : DelegateExample.cs
 ///// </summary>
 namespace Playground
 {
@@ -706,20 +737,14 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            // Vehicle s = new Vehicle();  // you cannot do that, cannot create a new instant of abstract class
-            Vehicle s;
-            s = new Car();              // Polymorphism
-            s.Driving();
-            s = new Bus();              // Polymorphism
-            s.Driving();
-
-            Console.ReadLine();
-
+            DelegateExample.Test();
         }
-
     }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
 
 

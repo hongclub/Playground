@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Methods\AbstractMethod.cs" />
+    <Compile Include="Methods\DelegateExample.cs" />
     <Compile Include="Methods\GarbageCollectionMethods.cs" />
     <None Include="Program.archive" />
     <Compile Include="Methods\IEnumerableVsIQueryable.cs" />
