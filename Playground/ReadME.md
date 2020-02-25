@@ -3,12 +3,17 @@
 - IEnumerable vs TOLIST
 - SOLID
 - GRASP
-- x Func
-- x Event
-- x delegate
 - dynamic, object
-- As vs Is
+- AutoFac and Unity
 - ref vs out
 - each version
 - const vs readonly
 - pass by value
+
+
+
+Done
+x As vs Is
+- x Func
+- x Event
+- x delegate
