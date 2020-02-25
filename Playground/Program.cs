@@ -843,12 +843,33 @@ namespace Playground
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-///// Test : BaseExample.cs
+/////// Test : BaseExample.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: BaseExample.cs
+/////// Test : BaseExample.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            BaseExample.TestBase();
+//            Console.ReadLine();
+//        }
+//    }
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+///// Test : ThisExample.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: BaseExample.cs
-///// Test : BaseExample.cs
+///// class: ThisExample.cs
+///// Test : ThisExample.cs
 ///// </summary>
 namespace Playground
 {
@@ -856,7 +877,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            BaseExample.TestBase();
+            ThisExample.TestThis();
             Console.ReadLine();
         }
     }
