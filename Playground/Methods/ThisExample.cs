@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-// ref: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base
+// ref: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this
 namespace Playground
 {
     public static class ThisExample
@@ -13,8 +13,6 @@ namespace Playground
             e.DoSomething();
         }
     }
-
-    // base class
    
     public class Employee2 
     {
