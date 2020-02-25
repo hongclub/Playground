@@ -60,7 +60,7 @@
     <Compile Include="Methods\IEnumerableExample.cs" />
     <Compile Include="Methods\NullOperators.cs" />
     <Compile Include="Methods\AsyncAwait.cs" />
-    <Compile Include="Methods\BaseVsThis.cs" />
+    <Compile Include="Methods\BaseExample.cs" />
     <Compile Include="Methods\VirtualMethod.cs" />
     <Compile Include="Methods\StaticVariable.cs" />
     <Compile Include="Methods\GenericExample.cs" />
