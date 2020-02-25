@@ -60,6 +60,7 @@
     <Compile Include="Methods\IEnumerableExample.cs" />
     <Compile Include="Methods\NullOperators.cs" />
     <Compile Include="Methods\AsyncAwait.cs" />
+    <Compile Include="Methods\BaseVsThis.cs" />
     <Compile Include="Methods\VirtualMethod.cs" />
     <Compile Include="Methods\StaticVariable.cs" />
     <Compile Include="Methods\GenericExample.cs" />
@@ -79,6 +80,8 @@
   <ItemGroup>
     <Content Include="Notes\AccessModifiers.txt" />
     <Content Include="Notes\OOPConectps.txt" />
+    <Content Include="Reference\CSharp - Versions.png" />
+    <Content Include="Reference\Git - Cheat Sheet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

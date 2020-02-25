@@ -6,3 +6,10 @@
 - x Func
 - x Event
 - x delegate
+- dynamic, object
+- As vs Is
+- ref vs out
+- each version
+- const vs readonly
+- base vs this
+- pass by value
