@@ -843,12 +843,12 @@ namespace Playground
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-///// Test : BaseVsThis.cs
+///// Test : BaseExample.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: BaseVsThis.cs
-///// Test : BaseVsThis.cs
+///// class: BaseExample.cs
+///// Test : BaseExample.cs
 ///// </summary>
 namespace Playground
 {
@@ -856,7 +856,7 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            BaseVsThis.TestBase();
+            BaseExample.TestBase();
             Console.ReadLine();
         }
     }

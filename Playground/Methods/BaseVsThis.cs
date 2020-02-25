@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 // ref: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base
 namespace Playground
 {
-    public static class BaseVsThis
+    public static class BaseExample
     {
         public static void TestBase()
         {
