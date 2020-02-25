@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Methods\AbstractMethod.cs" />
+    <Compile Include="Methods\IsVsAs.cs" />
     <Compile Include="Methods\ThisExample.cs" />
     <Compile Include="Methods\DelegateActionExample.cs" />
     <Compile Include="Methods\DelegateFuncExample.cs" />
