@@ -11,5 +11,4 @@
 - ref vs out
 - each version
 - const vs readonly
-- base vs this
 - pass by value
