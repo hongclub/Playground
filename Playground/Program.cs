@@ -856,7 +856,6 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-
             BaseVsThis.TestBase();
             Console.ReadLine();
         }
