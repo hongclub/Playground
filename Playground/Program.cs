@@ -898,7 +898,10 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            IsVsAs.TestIs();
+            //IsVsAs.TestIs();
+            //Console.ReadLine();
+
+            IsVsAs.TestAs();
             Console.ReadLine();
         }
     }
