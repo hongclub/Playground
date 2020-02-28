@@ -3,11 +3,9 @@
 - IEnumerable vs TOLIST
 - SOLID
 - GRASP
-- dynamic, object
 - AutoFac and Unity
 - ref vs out
 - each version
-
 - pass by value
 
 
@@ -18,3 +16,4 @@ x Func
 x Event
 x delegate
 x const vs readonly
+x dynamic, object

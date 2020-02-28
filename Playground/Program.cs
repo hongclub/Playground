@@ -885,12 +885,36 @@ namespace Playground
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 
-///// Test : IsVsAs.cs
+/////// Test : IsVsAs.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: IsVsAs.cs
+/////// Test : IsVsAs.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            //IsVsAs.TestIs();
+//            //Console.ReadLine();
+
+//            IsVsAs.TestAs();
+//            Console.ReadLine();
+//        }
+//    }
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+///// Test : ObjectVsDynamic.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
 ///// 
-///// class: IsVsAs.cs
-///// Test : IsVsAs.cs
+///// class: ObjectVsDynamic.cs
+///// Test : ObjectVsDynamic.cs
 ///// </summary>
 namespace Playground
 {
@@ -898,10 +922,10 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            //IsVsAs.TestIs();
-            //Console.ReadLine();
 
-            IsVsAs.TestAs();
+
+            ObjectVsDynamic.TestObject();
+            ObjectVsDynamic.TestDynamic();
             Console.ReadLine();
         }
     }

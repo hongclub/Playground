@@ -50,6 +50,7 @@
     <Compile Include="Methods\AbstractMethod.cs" />
     <Compile Include="Methods\ConstVsReadonly.cs" />
     <Compile Include="Methods\IsVsAs.cs" />
+    <Compile Include="Methods\ObjectVsDynamic.cs" />
     <Compile Include="Methods\ThisExample.cs" />
     <Compile Include="Methods\DelegateActionExample.cs" />
     <Compile Include="Methods\DelegateFuncExample.cs" />
