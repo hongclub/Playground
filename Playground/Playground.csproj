@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extentions\ExtentionMethods.cs" />
     <Compile Include="Methods\AbstractMethod.cs" />
     <Compile Include="Methods\ConstVsReadonly.cs" />
     <Compile Include="Methods\IsVsAs.cs" />
@@ -87,5 +88,6 @@
     <Content Include="Reference\CSharp - Versions.png" />
     <Content Include="Reference\Git - Cheat Sheet.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

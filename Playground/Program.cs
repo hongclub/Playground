@@ -14,6 +14,7 @@ using System.Diagnostics;
 using Playground.Methods;
 using Playground.Models;
 using System.Net.Http;
+using Playground.Extentions;
 
 
 
@@ -909,6 +910,30 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
+/////// Test : ObjectVsDynamic.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: ObjectVsDynamic.cs
+/////// Test : ObjectVsDynamic.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+
+
+//            ObjectVsDynamic.TestObject();
+//            ObjectVsDynamic.TestDynamic();
+//            Console.ReadLine();
+//        }
+//    }
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
 ///// Test : ObjectVsDynamic.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
@@ -922,18 +947,32 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
+            string testCode = "";
 
+            // var listTestcodes = testCode.Split(',').Select(int.Parse).ToList();
+            var listTestcodes = testCode.GetIntegerFromDelimiter();
+            
+            string testCode2 = "Keybank=123,FifthThird=145";
+            var listTestcodes2 = testCode2.GetDictionaryFromDelimiter();
 
-            ObjectVsDynamic.TestObject();
-            ObjectVsDynamic.TestDynamic();
+            int test = 123;
+            Console.WriteLine(listTestcodes.Contains(test));
+            Console.WriteLine(listTestcodes2.ContainsValue(test));
             Console.ReadLine();
+
+            /*
+            foreach (var c in listTestcodes)
+            {
+                Console.WriteLine($"[{@c}]");
+            }
+            Console.ReadLine();
+            */
         }
+
+        
     }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-
-
 
 
 
