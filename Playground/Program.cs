@@ -15,6 +15,7 @@ using Playground.Methods;
 using Playground.Models;
 using System.Net.Http;
 using Playground.Extentions;
+using System.Configuration;
 
 
 
@@ -949,6 +950,7 @@ namespace Playground
         {
             string testCode = "";
 
+            var l = ConfigurationManager.AppSettings["Bai2CodesAchRelatedTypeCodes"].GetIntegerFromDelimiter();
             // var listTestcodes = testCode.Split(',').Select(int.Parse).ToList();
             var listTestcodes = testCode.GetIntegerFromDelimiter();
             

@@ -15,14 +15,25 @@ namespace Playground.Extentions
 
         public static List<int> GetIntegerFromDelimiter(this string source)
         {
-            List<int> l = new List<int>();
-            try
-            {
-                l = source.Split(',').Select(int.Parse).ToList();
-            }
-            catch { };
+            //List<int> l = new List<int>();
+            //try
+            //{
+            //    l = source.Split(',').Select(int.Parse).ToList();
+            //}
+            //catch { };
 
-            return l;
+            //return l;
+
+
+            //if (!string.IsNullOrEmpty(source))
+            //    return source.Split(',').Select(int.Parse).ToList();
+            //else
+            //    return new List<int>();
+
+            return string.IsNullOrEmpty(source?.Trim()) ? 
+                new List<int>() : source.Split(',').Select(int.Parse).ToList();
+
+
         }
 
         public static Dictionary<string, int> GetDictionaryFromDelimiter(this string source)
