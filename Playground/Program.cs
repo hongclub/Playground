@@ -935,6 +935,49 @@ namespace Playground
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 
+/////// Test : ObjectVsDynamic.cs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <summary>
+/////// 
+/////// class: ObjectVsDynamic.cs
+/////// Test : ObjectVsDynamic.cs
+/////// </summary>
+//namespace Playground
+//{
+//    public class Demo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            string testCode = "";
+
+//            var l = ConfigurationManager.AppSettings["Bai2CodesAchRelatedTypeCodes"].GetIntegerFromDelimiter();
+//            // var listTestcodes = testCode.Split(',').Select(int.Parse).ToList();
+//            var listTestcodes = testCode.GetIntegerFromDelimiter();
+            
+//            string testCode2 = "Keybank=123,FifthThird=145";
+//            var listTestcodes2 = testCode2.GetDictionaryFromDelimiter();
+
+//            int test = 123;
+//            Console.WriteLine(listTestcodes.Contains(test));
+//            Console.WriteLine(listTestcodes2.ContainsValue(test));
+//            Console.ReadLine();
+
+//            /*
+//            foreach (var c in listTestcodes)
+//            {
+//                Console.WriteLine($"[{@c}]");
+//            }
+//            Console.ReadLine();
+//            */
+//        }
+
+        
+//    }
+//}
+
+
+
+
 ///// Test : ObjectVsDynamic.cs
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// <summary>
@@ -948,30 +991,51 @@ namespace Playground
     {
         public static void Main(string[] args)
         {
-            string testCode = "";
+            string path = @"c:\temp\MyTest.txt";
 
-            var l = ConfigurationManager.AppSettings["Bai2CodesAchRelatedTypeCodes"].GetIntegerFromDelimiter();
-            // var listTestcodes = testCode.Split(',').Select(int.Parse).ToList();
-            var listTestcodes = testCode.GetIntegerFromDelimiter();
-            
-            string testCode2 = "Keybank=123,FifthThird=145";
-            var listTestcodes2 = testCode2.GetDictionaryFromDelimiter();
-
-            int test = 123;
-            Console.WriteLine(listTestcodes.Contains(test));
-            Console.WriteLine(listTestcodes2.ContainsValue(test));
-            Console.ReadLine();
-
-            /*
-            foreach (var c in listTestcodes)
+            // Create the file if it does not exist.
+            if (!File.Exists(path))
             {
-                Console.WriteLine($"[{@c}]");
+                // Create the file.
+                using (FileStream fs = File.Create(path))
+                {
+                    Byte[] info = new UTF8Encoding(true).GetBytes("This is some text in the file.");
+
+                    // Add some information to the file.
+                    fs.Write(info, 0, info.Length);
+                }
             }
-            Console.ReadLine();
-            */
+
+            // Open the stream and read it back.
+            using (FileStream fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.None))
+            {
+                byte[] b = new byte[1024];
+                UTF8Encoding temp = new UTF8Encoding(true);
+
+                while (fs.Read(b, 0, b.Length) > 0)
+                {
+                    Console.WriteLine(temp.GetString(b));
+                }
+
+                
+            }
+
+            try
+            {
+                // Try to get another handle to the same file.
+                using (FileStream fs2 = File.OpenRead(path))
+                {
+                    // Do some task here.
+                }
+            }
+            catch (Exception e)
+            {
+                Console.Write("Opening the file twice is disallowed.");
+                Console.WriteLine(", as expected: {0}", e.ToString());
+            }
         }
 
-        
+
     }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////  
