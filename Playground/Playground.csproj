@@ -75,7 +75,7 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="NextGen\DeclarativeOverImperative.cs" />
     <Compile Include="NextGen\ExtendedMethod.cs" />
-    <Compile Include="NextGen\LinqAggregate_incomplete.cs" />
+    <Compile Include="NextGen\LinqAggregate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Methods\StringMethods.cs" />
